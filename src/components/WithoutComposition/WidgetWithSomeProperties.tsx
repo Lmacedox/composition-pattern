@@ -1,9 +1,9 @@
 'use client'
 
 import { Rocket } from 'lucide-react'
-import { Notification } from './NotificationWithoutComposition'
+import { NotificationWithProperties } from './NotificationWithoutComposition'
 
-export function Widget() {
+export function WidgetSomeProperties() {
   return (
     <div className="w-[448px] rounded overflow-hidden">
       {/* Header */}
@@ -21,14 +21,14 @@ export function Widget() {
         </div>
 
         <div className="divide-y-2 divide-zinc-300 dark:divide-zinc-950">
-          <Notification
+          <NotificationWithProperties
             text="Você recebeu um convite para fazer parte da empresa Rocketseat."
             icon={<Rocket className="w-6 h-6 text-violet-500 mt-3" />}
             hasActions
             onSubmitAction={() => console.log('Hello')}
             onCancelAction={() => console.log('Hello')}
           />
-          <Notification
+          <NotificationWithProperties
             text="Você recebeu um convite para fazer parte da empresa Rocketseat."
             icon={<Rocket className="w-6 h-6 text-violet-500 mt-3" />}
           />
@@ -42,7 +42,7 @@ export function Widget() {
         </div>
 
         <div className="divide-y-2 divide-zinc-300 dark:divide-zinc-950">
-          <Notification
+          <NotificationWithProperties
             text="Você recebeu um convite para fazer parte da empresa Rocketseat."
             icon={<Rocket className="w-6 h-6 text-violet-500 mt-3" />}
           />

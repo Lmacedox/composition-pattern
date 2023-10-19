@@ -9,7 +9,7 @@ interface NotificationProps {
   onSubmitAction?: () => void
 }
 
-export function Notification({
+export function NotificationWithProperties({
   text,
   icon,
   hasActions = false,
